@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrickBuilder - Seu App de MOCs</title>
+    <style>
+        :root {
+            --primary: #d32f2f;
+            --secondary: #ffc107;
+            --bg: #f4f4f4;
+            --card: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg);
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: var(--primary);
+            color: white;
+            padding: 1rem;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .container {
+            padding: 20px;
+            max-width: 600px;
+            margin: auto;
+        }
+
+        .search-bar {
+            width: 100%;
+            padding: 12px;
+            border-radius: 25px;
+            border: 1px solid #ddd;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+        }
+
+        .moc-card {
+            background: var(--card);
+            border-radius: 15px;
+            overflow: hidden;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .moc-img {
+            width: 100%;
+            height: 200px;
+            background-color: #ddd;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: #888;
+        }
+
+        .moc-info {
+            padding: 15px;
+        }
+
+        .moc-title {
+            margin: 0;
+            font-size: 1.2rem;
+            color: #333;
+        }
+
+        .moc-price {
+            color: #2e7d32;
+            font-weight: bold;
+            margin-top: 5px;
+        }
+
+        .stats {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        .btn-buy {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: var(--secondary);
+            color: #333;
+            text-align: center;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>BrickBuilder</h1>
+</header>
+
+<div class="container">
+    <input type="text" class="search-bar" placeholder="Buscar MOCs ou Peças...">
+
+    <div class="moc-card">
+        <div class="moc-img">IMAGEM DO MARTY MCFLY</div>
+        <div class="moc-info">
+            <h2 class="moc-title">Marty McFly - BTTF 1</h2>
+            <div class="moc-price">Peças: ~R$ 26,00</div>
+            <div class="stats">
+                <span>Peças: 110</span>
+                <span>Instruções: $1.99</span>
+            </div>
+            <a href="#" class="btn-buy">Ver Detalhes</a>
+        </div>
+    </div>
+
+    <div class="moc-card">
+        <div class="moc-img">IMAGEM DO DOC BROWN</div>
+        <div class="moc-info">
+            <h2 class="moc-title">Doc Brown - Macacão</h2>
+            <div class="moc-price">Peças: ~R$ 64,40</div>
+            <div class="stats">
+                <span>Peças: 125</span>
+                <span>Instruções: $1.99</span>
+            </div>
+            <a href="#" class="btn-buy">Ver Detalhes</a>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
