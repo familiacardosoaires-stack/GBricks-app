@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GBricks - Galeria de MOCs</title>
+    <style>
+        :root {
+            --primary: #1a1a1a; /* Cor mais elegante, tipo Dark Mode */
+            --accent: #d32f2f;
+            --bg: #f0f0f0;
+            --text: #333;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: var(--primary);
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+            border-bottom: 4px solid var(--accent);
+        }
+
+        header h1 { margin: 0; letter-spacing: 2px; }
+        header p { margin: 5px 0 0; opacity: 0.8; }
+
+        .container {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .moc-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .moc-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .moc-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .moc-img {
+            width: 100%;
+            height: 250px;
+            background-color: #e0e0e0;
+            object-fit: cover; /* Para quando você colocar suas fotos reais */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #999;
+            font-size: 0.9rem;
+        }
+
+        .moc-content {
+            padding: 20px;
+        }
+
+        .moc-title {
+            font-size: 1.4rem;
+            margin: 0 0 10px 0;
+            color: var(--primary);
+        }
+
+        .moc-desc {
+            font-size: 0.95rem;
+            color: #666;
+            line-height: 1.4;
+            margin-bottom: 15px;
+        }
+
+        .moc-meta {
+            display: flex;
+            justify-content: space-between;
+            border-top: 1px solid #eee;
+            padding-top: 15px;
+            font-size: 0.85rem;
+            font-weight: bold;
+            color: #555;
+        }
+
+        .tag {
+            background: #eee;
+            padding: 4px 10px;
+            border-radius: 4px;
+            color: var(--accent);
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>GBRICKS</h1>
+    <p>Minha Coleção de Criações Originais LEGO</p>
+</header>
+
+<div class="container">
+    <div class="moc-grid">
+
+        <article class="moc-card">
+            <div class="moc-img">
+                FOTO DO MARTY MCFLY
+            </div>
+            <div class="moc-content">
+                <h2 class="moc-title">Marty McFly</h2>
+                <p class="moc-desc">Versão BrickHeadz otimizada do protagonista de De Volta Para o Futuro. Foco em cores vibrantes e técnicas de SNOT.</p>
+                <div class="moc-meta">
+                    <span><span class="tag">110 PEÇAS</span></span>
+                    <span>NÍVEL: INTERMEDIÁRIO</span>
+                </div>
+            </div>
+        </article>
+
+        <article class="moc-card">
+            <div class="moc-img">
+                FOTO DO DOC BROWN
+            </div>
+            <div class="moc-content">
+                <h2 class="moc-title">Emmett Brown</h2>
+                <p class="moc-desc">O cientista maluco em sua versão clássica de 1985. Design focado na fidelidade visual e uso de peças comuns.</p>
+                <div class="moc-meta">
+                    <span><span class="tag">125 PEÇAS</span></span>
+                    <span>NÍVEL: AVANÇADO</span>
+                </div>
+            </div>
+        </article>
+
+    </div>
+</div>
+
+</body>
+</html>
